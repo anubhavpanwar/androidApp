@@ -80,15 +80,6 @@ public class TicketCreate extends AppCompatActivity {
         final String requestBody = jsonCreateTicket.toString();
 
 
-
-
-        Map<String,Object> params = new HashMap<String, Object>();
-        params.put("MobileNumber", "+97333765439");
-        params.put("EmailAddress", "danish.hussain4@das.com");
-        params.put("FirstName", "Danish2");
-        params.put("LastName", "Hussain2");
-        params.put("Country", "BH");
-        params.put("Language", "EN");
         JsonObjectRequest req = new JsonObjectRequest(Request.Method.POST, url, new JSONObject(requestBody),
                 new Response.Listener<JSONObject>() {
                     @Override
